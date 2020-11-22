@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Animated Login Form</title>
+    <meta name="monetization" content="$ilp.uphold.com/WUdKN2pAgLAG"/>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form method="get" action="javascript: void(0);" id="compress-form" class="login-form" autocomplete="off" role="main" style="margin-right: 100px">
+    <h1 class="a11y-hidden">Login Form</h1>
+    <!--<div>
+      <label class="label-email">
+        <input type="email" class="text" name="email" placeholder="Email" tabindex="1" required />
+        <span class="required">Email</span>
+      </label>
+    </div>
+    <div>
+      <label class="label-password">
+        <input type="text" class="text" name="password" placeholder="Password" tabindex="2" required />
+        <span class="required">Password</span>
+      </label>
+    </div>-->
+    <input type="file" name="file">
+    <input type="submit" value="Compress File" onclick="compressFile()"/>
+</form>
+<form method="get" action="javascript: void(0);" id="decompress-form" class="login-form" autocomplete="off" role="main">
+    <h1 class="a11y-hidden">Login Form</h1>
+    <div>
+        <label class="label-email">
+            <input type="file" name="key" placeholder="Key" required/>
+            <span class="required">Key</span>
+        </label>
+    </div>
+    <!--<div>
+      <label class="label-password">
+        <input type="text" class="text" name="password" placeholder="Password" tabindex="2" required />
+        <span class="required">Password</span>
+      </label>
+    </div>-->
+    <label class="label-email">
+        <input type="file" name="file">
+        <span class="required">Compressed file</span>
+    </label>
+    <input type="submit" value="Decompress File" onclick="decompressFile()"/>
+</form>
+<!-- partial -->
+
+</body>
+</html>
