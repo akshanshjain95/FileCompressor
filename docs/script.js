@@ -15,7 +15,7 @@ async function compressFile() {
         }
     }
 
-    xhr.open("POST", "http://localhost:8080/process/compress");
+    xhr.open("POST", "http://52.207.227.220:8080/process/compress");
     xhr.send(formData);
 }
 
@@ -35,7 +35,7 @@ async function decompressFile() {
         }
     }
 
-    xhr.open("POST", "http://localhost:8080/process/decompress");
+    xhr.open("POST", "http://52.207.227.220:8080/process/decompress");
     xhr.send(formData);
 }
 
