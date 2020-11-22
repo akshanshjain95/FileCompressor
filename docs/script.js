@@ -15,7 +15,7 @@ async function compressFile() {
         }
     }
 
-    xhr.open("POST", "https://52.207.227.220:8443/process/compress");
+    xhr.open("POST", "https://localhost:8443/process/compress");
     xhr.send(formData);
 }
 
